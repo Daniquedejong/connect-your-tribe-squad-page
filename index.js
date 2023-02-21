@@ -1,13 +1,17 @@
 import express from 'express'
 
-const url = 'https://whois.fdnd.nl/api/v1/squad/squad-b-2022'
-const url2 = './squad-a-2022.json'
-const data = await fetch(url)
+// const url = 'https://whois.fdnd.nl/api/v1/squad/squad-b-2022'
+const url2 = 'https://raw.githubusercontent.com/Daniquedejong/connect-your-tribe-squad-page/main/squad-a-2022.json'
+// const data = await fetch(url)
+
+  // .then((response) => response.json())
+  // .catch((error) => error)
+  
 const data2 = await fetch(url2)
   .then((response) => response.json())
   .catch((error) => error)
 
-console.log(data)
+console.log(data2)
 
 // Maak een nieuwe express app
 const app = express()
@@ -21,7 +25,7 @@ app.use(express.static('public'))
 app.get('/', (request, response) => {
   console.log(request.query.squad)
 
-  response.render('index', data && data2)
+  response.render('index', data2)
 })
 
 
