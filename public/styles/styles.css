@@ -13,10 +13,13 @@ body {
   background: var(--black);
 }
 
+
 h1 {
   color: var(--white);
+  background-color: #303030;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
+  font-size: 40px;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
@@ -28,63 +31,57 @@ h1 {
 .ervaring-5 {
   position: absolute;
   border-radius: 15em;
-  background-color: rgb(255, 60, 196);
-  /* top: 15em;
-  right: -10em; */
+  background-color: rgb(147, 14, 107);
   color: var(--white);
-  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .ervaring-0 {
   right: 10em;
-  top: 20em;
-  width: 5em;
-  height: 5em;
+  top: 5em;
+  width: 15em;
+  height: 15em;
   animation: moveAroundCircle1 120s infinite linear;
   animation-delay: 0.3s;
 }
 
 .ervaring-1 {
-  right: -20em;
-  top: 5em;
-  width: 7.5em;
-  height: 7.5em;
+  right: 20em;
+  top: 35em;
+  width: 2.5em;
+  height: 2.5em;
   animation: moveAroundCircle2 120s infinite linear;
 }
 
 .ervaring-2 {
-  right: -5em;
+  right: 5em;
   top: 20em;
-  width: 10em;
-  height: 10em;
+  width: 5em;
+  height: 5em;
   animation: moveAroundCircle3 120s infinite linear;
 }
 
 .ervaring-3 {
-  right: -30em;
-  top: 30em;
-  width: 15em;
-  height: 15em;
+  right: 10em;
+  top: 20em;
+  width: 7.5em;
+  height: 7.5em;
   animation: moveAroundCircle4 120s infinite linear;
 }
 
 
 .ervaring-4 {
-  right: -15em;
-  top: 20em;
-  width: 2.5em;
-  height: 2.5em;
+  right: 0em;
+  top: 30em;
+  width: 10em;
+  height: 10em;
   animation: moveAroundCircle5 120s infinite linear;
 }
 
-.ervaring-5 {
-  left: -25em;
-  top: 35em;
-  width: 12.5em;
-  height: 12.5em;
-  animation: moveAroundCircle6 120s infinite linear;
-}
 
 
 
@@ -95,7 +92,7 @@ h1 {
   }
 
   50% {
-    transform: translate(40em, 30em);
+    transform: translate(10em, 5em);
   }
 
   100% {
@@ -109,7 +106,7 @@ h1 {
   }
 
   50% {
-    transform: translate(50em, 20em);
+    transform: translate(10em, -5em);
   }
 
   100% {
@@ -123,7 +120,7 @@ h1 {
   }
 
   50% {
-    transform: translate(30em, 60em);
+    transform: translate(10em, -10em);
   }
 
   100% {
@@ -137,7 +134,7 @@ h1 {
   }
 
   50% {
-    transform: translate(10em, 10em);
+    transform: translate(-5em, 5em);
   }
 
   100% {
@@ -151,7 +148,7 @@ h1 {
   }
 
   50% {
-    transform: translate(30em, 5em);
+    transform: translate(-10em, 5em);
   }
 
   100% {
@@ -159,18 +156,52 @@ h1 {
   }
 }
 
-@keyframes moveAroundCircle6 {
-  0% {
-    transform: translate(0);
-  }
+section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  50% {
-    transform: translate(5em, 5em);
-  }
+article {
+  position: relative;
+  width: 15rem;
+  height: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--white);
+  text-align: center;
+  background: rgb(176, 125, 161);
+  border-radius: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+}
 
-  100% {
-    transform: translate(0);
-  }
+article h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+article img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+article a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2rem;
+  display: block;
+}
+
+h2 {
+  color: var(--white);
 }
 
 /* Media queries */

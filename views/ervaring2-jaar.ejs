@@ -1,7 +1,23 @@
 <%- include('./head') %>
 
   <body>
-      <h1>Squadpage</h1>
+    <h1>Studenten met 2 jaar ervaring</h1>
+
+    <section>
+      <% squad.members.forEach(member=> { %>
+        <% if (member.ervaring==="2 jaar" ) { %>
+          <article>
+            <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+            <h2>
+              <%= member.name %>
+              <%= member.prefix %>
+              <%= member.surname %>
+            </h2>
+          </article>
+          <% } %>
+      <% }) %>
+    </section>
+
   </body>
 
   </html>

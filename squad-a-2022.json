@@ -22,6 +22,7 @@
                     "html": "Student FDND!"
                 },
                 "website": "https://fine-blue-angler-cap.cyclic.app/",
+                "ervaring": "0 jaar",
                 "colour": {
                     "hex": "#000000"
                 }
@@ -241,6 +242,7 @@
                     "html": "Ik ben 22 jaar en ik woon samen met mijn ouders in Hoofddorp. Momenteel volg ik de studie Frontend Design &amp; Development in Amsterdam. Verder hou ik heel erg van rode panda&#39;s."
                 },
                 "website": "celinevanderputte.student.fdnd.nl",
+                "ervaring": "0 jaar",
                 "colour": null
             },
             {
@@ -429,6 +431,7 @@
                     "html": "Creative Frontend Developer in spé"
                 },
                 "website": "",
+                "ervaring": "0 jaar",
                 "colour": null
             },
             {

@@ -1,17 +1,12 @@
-import express from 'express'
+// import express from 'express' dit is gedaan met commonjs ipv ES modules
+// VERANDER DIT TERUG ALS JE IMPORT EN ES MODULES WILT GEBRUIKEN
+const express = require('express');
 
-// const url = 'https://whois.fdnd.nl/api/v1/squad/squad-b-2022'
-const url2 = 'https://raw.githubusercontent.com/Daniquedejong/connect-your-tribe-squad-page/main/squad-a-2022.json'
-// const data = await fetch(url)
+// loading in new library for local JSON
+const fs = require('fs');
 
-  // .then((response) => response.json())
-  // .catch((error) => error)
-  
-const data2 = await fetch(url2)
-  .then((response) => response.json())
-  .catch((error) => error)
-
-console.log(data2)
+let rawDataStudenten = fs.readFileSync('squad-a-2022.json');
+let jsonStudenten = JSON.parse(rawDataStudenten);
 
 // Maak een nieuwe express app
 const app = express()
@@ -23,21 +18,34 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  console.log(request.query.squad)
-
-  response.render('index', data2)
+  response.render('index', jsonStudenten)
 })
 
+// routing voor pagina's, jsonStudenten wordt meegegeven als data
+app.get('/ervaring0-jaar', (request, response) => {
+  console.log(request.query.squad)
+  response.render('ervaring0-jaar', jsonStudenten)
+})
 
-app.get('/test', (request, response) => {
-    console.log(request.query.squad)
-  
-    response.render('test')
-  })
+app.get('/ervaring1-jaar', (request, response) => {
+  response.render('ervaring1-jaar', jsonStudenten)
+})
 
-// app.get('/members', (request, response) => {
-//   response.send('Joepie!!')
-// })
+app.get('/ervaring2-jaar', (request, response) => {
+  response.render('ervaring2-jaar', jsonStudenten)
+})
+
+app.get('/ervaring3-jaar', (request, response) => {
+  response.render('ervaring3-jaar', jsonStudenten)
+})
+
+app.get('/ervaring4-jaar', (request, response) => {
+  response.render('ervaring4-jaar', jsonStudenten)
+})
+
+app.get('/ervaring5-jaar', (request, response) => {
+  response.render('ervaring5-jaar', jsonStudenten)
+})
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
