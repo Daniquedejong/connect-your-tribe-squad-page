@@ -11,7 +11,6 @@
 
 body {
   background: var(--black);
- max-width: 80em;
 }
 
 h1 {
@@ -28,50 +27,62 @@ h1 {
 .ervaring-4,
 .ervaring-5 {
   position: absolute;
-  width: 5em;
-  height: 5em;
   border-radius: 15em;
-  background-color: blueviolet;
-  top: 15em;
-  right: 30em;
+  background-color: rgb(255, 60, 196);
+  /* top: 15em;
+  right: -10em; */
   color: var(--white);
   text-align: center;
 }
 
 
-.ervaring-0{
+.ervaring-0 {
+  right: 10em;
+  top: 20em;
+  width: 5em;
+  height: 5em;
   animation: moveAroundCircle1 120s infinite linear;
   animation-delay: 0.3s;
 }
 
-.ervaring-1{
-  right: 40em;
-  top: 50em;
+.ervaring-1 {
+  right: -20em;
+  top: 5em;
+  width: 7.5em;
+  height: 7.5em;
   animation: moveAroundCircle2 120s infinite linear;
 }
 
-.ervaring-2{
-  right: 40em;
-  top: -15em;
+.ervaring-2 {
+  right: -5em;
+  top: 20em;
+  width: 10em;
+  height: 10em;
   animation: moveAroundCircle3 120s infinite linear;
 }
 
-.ervaring-3{
-  right: 5em;
-  top: -15em;
+.ervaring-3 {
+  right: -30em;
+  top: 30em;
+  width: 15em;
+  height: 15em;
   animation: moveAroundCircle4 120s infinite linear;
 }
 
 
-.ervaring-4{
-  right: -10em;
-  top: 30em;
+.ervaring-4 {
+  right: -15em;
+  top: 20em;
+  width: 2.5em;
+  height: 2.5em;
   animation: moveAroundCircle5 120s infinite linear;
 }
 
-.ervaring-5{
-  left: -5em;
-  top: -10em;
+.ervaring-5 {
+  left: -25em;
+  top: 35em;
+  width: 12.5em;
+  height: 12.5em;
   animation: moveAroundCircle6 120s infinite linear;
 }
 
@@ -79,81 +90,91 @@ h1 {
 
 /* Keyframes for animation */
 @keyframes moveAroundCircle1 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
-    transform: translate(-20em, -10em);
+
+  50% {
+    transform: translate(40em, 30em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle2 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
-    transform: translate(50em, -10em);
+
+  50% {
+    transform: translate(50em, 20em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle3 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
-    transform: translate(-30em, 7.5em);
+
+  50% {
+    transform: translate(30em, 60em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle4 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(10em, 10em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle5 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
-    transform: translate(-20em, -20em);
+
+  50% {
+    transform: translate(30em, 5em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle6 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(5em, 5em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 /* Media queries */
-
-
-
+/* 
 .ervaring-0,
 .ervaring-1,
 .ervaring-2,
@@ -172,113 +193,125 @@ h1 {
 }
 
 
-.ervaring-0{
+.ervaring-0 {
   animation: moveAroundCircle1 120s infinite linear;
   animation-delay: 0.3s;
 }
 
-.ervaring-1{
+.ervaring-1 {
   right: 40em;
   top: 50em;
   animation: moveAroundCircle2 120s infinite linear;
 }
 
-.ervaring-2{
+.ervaring-2 {
   right: 40em;
   top: -15em;
   animation: moveAroundCircle3 120s infinite linear;
 }
 
-.ervaring-3{
+.ervaring-3 {
   right: 5em;
   top: -15em;
   animation: moveAroundCircle4 120s infinite linear;
 }
 
 
-.ervaring-4{
+.ervaring-4 {
   right: -10em;
   top: 30em;
   animation: moveAroundCircle5 120s infinite linear;
 }
 
-.ervaring-5{
+.ervaring-5 {
   left: -5em;
   top: -10em;
   animation: moveAroundCircle6 120s infinite linear;
-}
+} */
 
 
 
 /* Keyframes for animation */
-@keyframes moveAroundCircle1 {
-  0%{
+/* @keyframes moveAroundCircle1 {
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(-20em, -10em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle2 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(50em, -10em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle3 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(-30em, 7.5em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle4 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(10em, 10em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle5 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(-20em, -20em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes moveAroundCircle6 {
-  0%{
+  0% {
     transform: translate(0);
   }
-  50%{
+
+  50% {
     transform: translate(5em, 5em);
   }
-  100%{
+
+  100% {
     transform: translate(0);
   }
-}
+} */
