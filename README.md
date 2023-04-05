@@ -1,7 +1,7 @@
 
 # Squadpage 
 
-![image](https://user-images.githubusercontent.com/112856683/220623102-a28bd148-be9d-4e71-9798-bbbf836315fb.png)
+![image](https://user-images.githubusercontent.com/112856683/230008149-c2a55746-19fb-4bd3-8742-a45242f1a83c.png)
 
 
 ## 📚 Inhoudsopgave
